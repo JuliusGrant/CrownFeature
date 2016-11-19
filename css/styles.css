@@ -1,0 +1,114 @@
+/*//////////BASE STYLES//////////*/
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+}
+
+html {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .9)),
+               url('../img/street.jpg') no-repeat center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  height: calc(100%);
+}
+
+body {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+a {
+  color: #e0d58b;
+}
+
+a:hover {
+  color: red;
+}
+
+.container {
+  padding-top: 150px;
+  width: 90%;
+}
+
+.logo {
+  max-width: 500px;
+  width: 100%;
+  padding-bottom: 75px;
+}
+
+.message {
+  font-size: 1.5em;
+}
+
+input[type=text] {
+    /*width: 100%;*/
+    box-sizing: border-box;
+    zoom: 1;
+    filter: alpha(opacity=50);
+    opacity: 0.4;
+    font-size: 1.3em;
+    border: 1px solid rgba(255, 255, 255, 0.49);
+    padding-left: 5px;
+}
+
+input[type=text]:focus {
+  color: black;
+  background-color: white;
+  border: none;
+  border-bottom: 4px solid #af9c4c;
+  opacity: 1;
+}
+
+input[type=submit] {
+  background-color: #af9c4c;
+      border: none;
+      color: white;
+      font-size: 1em;
+      padding: 5px 32px;
+      text-decoration: none;
+      margin: 4px 2px;
+      cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #877839;
+}
+
+.form {
+  padding-top: 100px;
+}
+
+.bgmusic {
+  display: none;
+  padding-top: 100px;
+}
+
+footer {
+  padding-top: 100px;
+  margin: 0 auto;
+  width: 100%;
+  position: fixed;
+  left: 0;
+}
+
+li {
+  list-style: none;
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icons {
+  width: 40px;
+}
+
+.icons:hover {
+  color: #e0d58b;
+}
