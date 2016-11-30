@@ -1,0 +1,274 @@
+/*//////////BASE STYLES//////////*/
+
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Arvo', serif;
+  background-color: #3C3741;
+  text-align: center;
+  line-height: 1.6;
+	color: #3a3a3a;
+}
+
+.row {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/*//////////LOGO NAV//////////*/
+
+.logo-pages {
+  width: 200px;
+  display: block;
+  float: left;
+  margin: 15px 0;
+}
+
+.logo-nav {
+  width: 50%;
+  height: 50%;
+  display: block;
+  float: left;
+  margin: 20px 0;
+  background: url('../logos/CFLogoLongAlt_white.png') left center no-repeat;
+  background-size: 80px 16px;
+}
+.description {
+  line-height: 60px;
+  width: 100%;
+  font-size: 1em;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+/*//////////NAVIGATION//////////*/
+nav {
+  float: right;
+}
+ul a {
+  transition: .35s linear;
+  padding: 0 10px;
+  font-weight: 500;
+  line-height: 60px;
+  color: white;
+  text-align: right;
+}
+ul a:last-child {
+  padding-right: 0;
+}
+ul a:hover {
+  color: #e0d58b;
+}
+ul a.active {
+  color: #e0d58b;
+}
+
+/*//////////GRIDS//////////*/
+.grid-full {
+  width: 100%;
+  float: left;
+}
+.grid-half {
+  width: 40%;
+  margin: 0 3%;
+  float: left;
+}
+.grid-half-1 {
+  width: 46%;
+  margin: 0 3%;
+  float: left;
+}
+.grid-third {
+  width: 27.33333%;
+  margin: 0 3%;
+  float: left;
+}
+.grid-fourth {
+  width: 25%;
+  float: left;
+}
+.grid-fifth {
+  width: 20%;
+  float: left;
+}
+
+a {
+  color: #e0d58b;
+}
+
+a:hover {
+  color: red;
+}
+
+.logo {
+  max-width: 500px;
+  width: 100%;
+  padding-bottom: 75px;
+}
+
+.message {
+  font-size: 1.5em;
+}
+
+
+
+.form {
+  padding-top: 100px;
+}
+
+footer {
+  padding-top: 100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icons {
+  width: 40px;
+}
+
+.icons:hover {
+  color: #e0d58b;
+}
+
+img {
+  max-width: 100%
+}
+
+
+
+/* navigation ------------------ */
+
+#name a {
+  padding: 10px 15px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.name {
+  font-size: 1.5em;
+}
+
+
+.main-nav a {
+  font-size: .95em;
+  text-transform: uppercase;
+}
+
+
+
+/* Layout Styles ------------------ */
+
+
+.flex-container {
+  background: white;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+
+.primary {
+  padding: 20px;
+}
+
+.secondary {
+  text-align: left;
+  padding: 20px;
+}
+
+
+.h1 {
+  font-size: 1.5em;
+}
+
+.h2 {
+  font-size: 1.75em;
+}
+
+
+.portfolio {
+	text-align: center;
+  padding: 15px 15px;
+  display: inline-block;
+
+}
+
+.p {
+  width: 60%;
+  font-size: 1.2em;
+  color: white;
+}
+
+.icons {
+  width: 35px;
+  margin: 10px;
+}
+
+.contact  {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px;
+  padding-bottom: 60px;
+}
+
+.contact h2 {
+  text-transform: uppercase;
+}
+
+.main-footer {
+  font-weight: bolder;
+}
+
+
+
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+
+/* Extra Styles --------------------- */
+
+.contentContainer {
+  background: #efefef;
+  padding: 20px;
+  width: 90%;
+  max-width: 960px;
+  min-width: 150px;
+  margin: 0vh auto;
+  border-radius: 10px;
+  border: solid 5px #dbdbdb;
+}
+
+
+#portfolio {
+  color: white;
+}

@@ -2,7 +2,6 @@
 
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
   margin: 0 auto;
 }
 
@@ -17,13 +16,86 @@ html {
 }
 
 body {
+  font-family: 'Arvo', serif;
   margin: 0 auto;
   text-align: center;
-  position: relative;
+}
+
+.row {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/*//////////LOGO NAV//////////*/
+.logo-nav {
+  width: 80px;
+  /*height: 24px;*/
+  display: block;
+  float: left;
+  margin: 20px 0;
+  background: url('../logos/CFLogoLongAlt_white.png') left center no-repeat;
+  background-size: 80px 16px;
+}
+.description {
+  line-height: 60px;
+  width: 100%;
+  font-size: 1em;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+/*//////////NAVIGATION//////////*/
+nav {
+  float: right;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+nav a {
+  transition: .35s linear;
+  padding: 0 10px;
+  font-weight: 500;
+  line-height: 60px;
+  color: white;
+  text-align: right;
+}
+nav a:last-child {
+  padding-right: 0;
+}
+nav a:hover {
+  color: #e0d58b;
+}
+nav a.active {
+  color: #e0d58b;
+}
+
+/*//////////GRIDS//////////*/
+.grid-full {
+  width: 100%;
+  float: left;
+}
+.grid-half {
+  width: 50%;
+  float: left;
+}
+.grid-third {
+  width: 27.33333%;
+  margin: 0 3%;
+  float: left;
+}
+.grid-fourth {
+  width: 25%;
+  float: left;
+}
+.grid-fifth {
+  width: 20%;
+  float: left;
 }
 
 a {
-  color: #e0d58b;gi
+  color: #e0d58b;
 }
 
 a:hover {
@@ -31,8 +103,13 @@ a:hover {
 }
 
 .container {
-  padding-top: 120px;
   width: 90%;
+}
+
+.flex-container {
+  padding-top: 150px;
+  border: none;
+  border-radius: 10px;
 }
 
 .logo {
@@ -104,7 +181,8 @@ a {
 }
 
 .icons {
-  width: 40px;
+  width: 35px;
+  margin: 10px;
 }
 
 .icons:hover {

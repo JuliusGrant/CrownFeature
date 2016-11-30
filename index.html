@@ -1,17 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html class="animsition">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css" media="screen" title="no title">
+    <!-- animsition.css -->
+    <link rel="stylesheet" href="animsition/dist/css/animsition.min.css">
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- animsition.js -->
+    <script src="animsition/dist/js/animsition.min.js"></script>
     <title>Crown Feature</title>
   </head>
   <body>
-    <div class="container">
+    <div class="row">
+         <header class="row">
+           <div class="grid-full">
+             <nav>
+               <a href="portfolio.html" class="animsition-link" >Portfolio</a>
+               <a href="contact.html" class="animsition-link" >Contact</a>
+             </nav>
+           </div>
+          </header>
+       </div>
+    <div class="flex-container">
+
+    <div class="grid-full">
       <div>
-        <img class="logo" src="img/CFLOGO600_white.png" alt="" />
+        <img class="logo" src="logos/CFLOGO600_white.png" alt="" />
       </div>
 
       <div>
@@ -23,7 +41,7 @@
 
       <div class="bgmusic">
         <audio controls autoplay loop="loop">
-         <source src="O1gA8MnaV6Yj.128.mp3" type="audio/mp3">
+         <source src="music/O1gA8MnaV6Yj.128_01.mp3" type="audio/mp3">
          Your browser does not support the audio element.
         </audio>
       </div>
@@ -59,5 +77,35 @@
 
     </div>
 
+  </div>
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+$(".animsition").animsition({
+  inClass: 'fade-in',
+  outClass: 'fade-out',
+  inDuration: 1500,
+  outDuration: 800,
+  linkElement: '.animsition-link',
+  // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+  loading: true,
+  loadingParentElement: 'body', //animsition wrapper element
+  loadingClass: 'animsition-loading',
+  loadingInner: '', // e.g '<img src="loading.svg" />'
+  timeout: false,
+  timeoutCountdown: 5000,
+  onLoadEvent: true,
+  browser: [ 'animation-duration', '-webkit-animation-duration'],
+  // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+  // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+  overlay : false,
+  overlayClass : 'animsition-overlay-slide',
+  overlayParentElement : 'body',
+  transition: function(url){ window.location.href = url; }
+});
+});
+  </script>
+
   </body>
+
 </html>
