@@ -176,7 +176,7 @@
     height: 249px;
     margin: 0 auto;
     margin-top: 35px;
-    margin-bottom: 20px;
+    margin-bottom: 45px;
   }
 
   p {
@@ -195,7 +195,7 @@
 }
 
 
-@media (min-width: 1601px) {
+@media (min-width: 1201px) {
 
   .container,
   .main-header,
@@ -272,7 +272,7 @@
     width: 33.2%;
     margin: 0 auto;
     margin-top: 35px;
-    margin-bottom: 20px;
+    margin-bottom: 65px;
     padding-bottom: 20px;
   }
 
